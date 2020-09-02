@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+      <meta charset = "UTF-8">
+      <title> Smooth Strings - Send Feedback </title>
+      <link rel = "stylesheet" type = "text/css" href = "styles/website_style.css">
+      <script src = "scripts/website_script.js"></script>
+      <link href = "https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel = "stylesheet">
+      <link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+      <style>
+          h2 {
+            margin-top: 250px;
+            text-transform: uppercase;
+            color: #F6F7EB;
+            text-shadow: 3px 2px #393E41;
+            font-family: 'ZCOOL KuaiLe', cursive;
+            text-align: center;
+            padding: 5px;
+          }
+          h3 {
+            margin-top: 20px;
+            font-size: 25px;
+            color: #5C415D;
+            text-align: center;
+          }
+          .text {
+            color: #E94F37;
+          }
+          #submit {
+            background-color: #F6F7EB;
+            color: #393E41;
+            border-radius: 20px;
+            border-color: #5C415D;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            padding: 10px 15px;
+            box-shadow: 1px 5px #393E41;
+            position: relative;
+            left: 680px;
+            bottom: 30px;
+          }
+          #submit:active {
+            background-color: #393E41;
+            box-shadow: 0 5px #F6F7EB;
+            color: #FFFC31;
+            transform: translateY(4px);
+          }
+          label {
+            font-weight: bold;
+            margin-left: 20px;
+          }
+          input {
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+          textarea {
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+          div {
+            background-color : #F6F7EB;
+            border-style: dashed;
+            border-width: thick;
+            border-color: #393E41;
+            width: 70%;
+            margin: 40px auto;
+          }
+          button#cv {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #393E41;
+            border: none;
+            font-weight: bold;
+            color: #FFFC31;
+            text-align: center;
+            padding: 10px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+          }
+          button#cv span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          button#cv span:after {
+            content: '\00ab';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: -10px;
+            transition: 0.5s;
+          }
+          button#cv:hover span {
+            padding-left: 20px;
+          }
+          button#cv:hover span:after {
+            opacity: 1;
+            left: 0;
+          }
+      </style>
+  </head>
+  <body>
+      <a href = "main_page.html" title = "Main Page"><h1 id = "banner"> Smooth Strings </h1></a>
+      <ul id = "menu">
+        <li><a href = "main_page.html">Main Page&nbsp;</a></li>
+        <li><a href = "store.html" >Shop&nbsp;</a></li>
+        <li style = "float:right"><a href = "form.html" >Send Feedback&nbsp;</a></li>
+        <li style = "float: right"><a href = "find_out_more.html" >Find out more&nbsp;</a></li>
+      </ul>
+      <h2>How did you find our site?</h2>
+      <form onsubmit = "return validation(this)">
+        <div>
+          <label for = "firstname">First Name:</label>
+            <input type = "text" name = "firstName" id = "firstname">
+          <label for = "lastname">Last Name:</label>
+            <input type = "text" name = "lastName" id = "lastname"><br><br>
+          <label for = "email">Email:</label>
+            <input type = "email" name = "email" id = "email"><br>
+        </div>
+        <div>
+          <h3>On a scale from <span class = "text"><i>Very Bad</i></span> to <span class = "text"><i>Very Good</i></span>, how would you rate our site?</h3>
+  	       <input type = "radio" name = "rating" id = "one" value = "Very Bad">
+          <label for = "Very Bad">Very Bad</label><br>
+            <input type = "radio" name = "rating" id = "two" value = "Bad">
+          <label for = "Bad">Bad</label><br>
+            <input type = "radio" name = "rating" id = "three" value = "Neither Good nor Bad">
+          <label for = "Neither Good nor Bad">Neither Good nor Bad</label><br>
+            <input type = "radio" name = "rating" id = "four" value = "Good">
+          <label for = "Good">Good</label><br>
+            <input type = "radio" name = "rating" id = "five" value = "Very Good">
+          <label for = "Very Good">Very Good</label><br><br>
+          <label for = "content">Give us your feedback:</label><br>
+  	      <textarea id = "content" name = "content" rows = "6" cols = "50"></textarea><br>
+        </div>
+        <input type = "submit" name = "button" value = "Send" id = "submit">
+      </form>
+      <button id = "cv" type = "button" onclick = "location.href = 'cv2.html'"><span>Page Editor</span></button>
+      <button id = "decrease" type = "button" name = "button-minus" onclick = "resizeFontSize(-1)">
+        <img src = "images/minus.png" alt = "minus button">
+      </button>
+      <button id = "increase" type = "button" name = "button-plus" onclick = "resizeFontSize(1)">
+        <img src = "images/plus.png" alt = "plus button">
+      </button>
+      <script>
+      var ratings = document.getElementsByName("rating");
+      function validation(form) {
+         var feedback = document.getElementById("content").value;
+         if ( form.firstName.value == "") {
+            alert("You have not entered your name!");
+            form.firstName.focus();
+            return false;
+         } else if(form.lastName.value == "") {
+            alert("You have not entered your name!");
+            form.lastName.focus();
+            return false;
+          } else if((ratings[0].checked == false) && (ratings[1].checked == false) && (ratings[2].checked == false) && (ratings[3].checked == false) && (ratings[4].checked == false)) {
+            alert("You must choose a rating!");
+            return false;
+          } else {
+            alert("Thank you, " + form.firstName.value + " " + form.lastName.value + " for your feedback! " + "You have rated our site as: " + getRatingValue(ratings) + "." + "\n" + "Your comment was: " + feedback + "." + "\n" + "Hope to see you again!");
+            return true;
+          }
+      }
+      function getRatingValue(ratings) {
+        var i;
+        for(i = 0; i < ratings.length; i++) {
+          if(ratings[i].checked) {
+            return ratings[i].value;
+          }
+        }
+      }
+      </script>
+  </body>
+</html>

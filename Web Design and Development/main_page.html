@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <title> Smooth Strings - Main Page </title>
+    <link rel = "stylesheet" type = "text/css" href = "styles/website_style.css">
+    <script src = "scripts/website_script.js"></script>
+    <link href = "https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+    <style>
+      header {
+        margin-bottom: 65px;
+      }
+      button#cv {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #393E41;
+        border: none;
+        font-weight: bold;
+        color: #FFFC31;
+        text-align: center;
+        padding: 10px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button#cv span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      button#cv span:after {
+        content: '\00ab';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -10px;
+        transition: 0.5s;
+      }
+      button#cv:hover span {
+        padding-left: 20px;
+      }
+      button#cv:hover span:after {
+        opacity: 1;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+      <h1 id = "banner"> Smooth Strings </h1>
+      <ul id = "menu">
+        <li><a href = "main_page.html">Main Page&nbsp;</a></li>
+        <li><a href = "store.html" >Shop&nbsp;</a></li>
+        <li style = "float:right"><a href = "form.html" >Send Feedback&nbsp;</a></li>
+        <li style = "float: right"><a href = "find_out_more.html" >Find out more&nbsp;</a></li>
+      </ul>
+      <header>
+        <h1>Welcome to our site!</h1>
+        <p>Since the powerful magic of your mouse has brought you to our little site, we would like to say:</p>
+        <p><i>GoOd jOb, yOu HaVe MaDe ThE rIgHt ChOiCe!</i></p>
+        <p>*joking*</p>
+        <p>We hope you're enjoying your 'stay' and don't forget: <i>Keep on Rockin'!</i></p>
+      </header>
+      <button id = "cv" type = "button" onclick = "location.href = 'cv2.html'"><span>Page Editor</span></button>
+      <button id = "decrease" type = "button" name = "button-minus" onclick = "resizeFontSize(-1)">
+        <img src = "images/minus.png" alt = "minus button">
+      </button>
+      <button id = "increase" type = "button" name = "button-plus" onclick = "resizeFontSize(1)">
+        <img src = "images/plus.png" alt = "plus button">
+      </button>
+  </body>
+</html>

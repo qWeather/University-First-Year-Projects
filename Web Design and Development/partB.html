@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "styles/website_style.css">
+    <script src = "scripts/website_script.js"></script>
+    <link href = "https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+    <title>Smooth Strings - Rock</title>
+    <style>
+      header p {
+        padding: 0;
+      }
+      h3 {
+        font-size: 25px;
+        color: #5C415D;
+        font-weight: bold;
+        font-family: 'ZCOOL KuaiLe', cursive;
+        text-align: center;
+      }
+      nav {
+        position: fixed;
+        bottom: -3px;
+        left: 0;
+        width: 150px;
+        background-color: #F6F7EB;
+        border: 5px groove #393E41;
+        font-family: 'ZCOOL KuaiLe', cursive;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li{
+        border-bottom: 5px groove #050505;
+      }
+      nav li a {
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        color: #5C415D;
+      }
+      li a:hover {
+        color: #FFFC31;
+        background-color: #393E41;
+      }
+      #cv {
+        transition: all 0.5s;
+      }
+      #cv span {
+        position: relative;
+        transition: 0.5s
+      }
+      #cv span:after {
+        content: '\00ab';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -10px;
+        transition: 0.5s;
+      }
+      #cv:hover span {
+        padding-left: 20px;
+      }
+      #cv:hover span:after {
+        opacity: 1;
+        left: 0;
+      }
+      div {
+        background-color : #F6F7EB;
+        border-style: dashed;
+        border-width: thick;
+        border-color: #393E41;
+        width: 75%;
+        margin: 40px auto;
+      }
+      div#one{
+        width: 75%;
+        height: 320px;
+        margin: 40px auto;
+      }
+      dl {
+        margin-left: 20px;
+      }
+      dt {
+        font-weight: bold;
+        text-align: justify;
+      }
+      .click {
+        cursor: pointer;
+      }
+      .details {
+        display: none;
+      }
+      p {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      p.photo {
+        float: right;
+        padding: 20px;
+        border-style: double;
+        border-width: thick;
+        border-color: #E94F37;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      img.photo {
+        float: right;
+        border: 3px solid #393E41;
+        border-radius: 3px;
+        border-width: thick;
+        width: 15%;
+        margin-right: 50px;
+      }
+      img.photo:hover {
+        box-shadow: 0px 0px 3px 3px #E94F37;
+      }
+      img {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id = "banner"> Smooth Strings </h1>
+    <header>
+      <h1>Rock throughout the decades</h1>
+      <p>Rock music has its root in 1940s and 1950s and originated as 'rock and roll'. It has then developed into a range of different styles in the 1960s, particularly in the United Kingdom and the United States.</p>
+      <p>The style itself drew a lot from genres such as blues and country.</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href = "#one">1950s</a></li>
+        <li><a href = "#two">1960s</a></li>
+        <li><a href = "#three">Psychedelia and progressivism</a></li>
+        <li><a href = "#four">1970s</a></li>
+        <li><a href = "#five">Punk era</a></li>
+        <li><a href = "#six">Alternative</a></li>
+        <li><a href = "#seven">2000s and present</a></li>
+        <li><a href = "cv.html" id = "cv"><span>Page Editor</span></a></li>
+      </ul>
+    </nav>
+    <div id = "one">
+      <h3>1950s: Rock and Roll</h3>
+      <a target = "_blank" href = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elvis_Presley_promoting_Jailhouse_Rock.jpg/800px-Elvis_Presley_promoting_Jailhouse_Rock.jpg">
+        <img class = "photo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elvis_Presley_promoting_Jailhouse_Rock.jpg/800px-Elvis_Presley_promoting_Jailhouse_Rock.jpg" alt = "elvis presley jailhouse" title = "Image Credits">
+      </a>
+      <p class = "photo"><strong>Elvis Presley</strong> - King of Rock and Roll</p>
+      <p>The foundations of rock music are in rock and roll, which originated in the United States during the late 1940s and early 1950s, and quickly spread to much of the rest of the world. Its immediate origins lay in a melding of various black musical genres of the time, including rhythm and blues and gospel music, with country and western.</p>
+    </div>
+    <div id = "two">
+      <h3>Early 1960s</h3>
+      <a target = "_blank" href = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/The_Beatles_in_America.JPG/1280px-The_Beatles_in_America.JPG">
+        <img class = "photo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/The_Beatles_in_America.JPG/1280px-The_Beatles_in_America.JPG" alt = "the beatles new york 1964" title = "Image Credits">
+      </a>
+      <p class = "photo"><strong>The Beatles</strong>, New York 1964</p>
+      <dl>
+        <dt>Pop rock and Instrumental Rock</dt>
+        <dd>The term pop has been used since the early 20th century to refer to popular music in general, but from the mid-1950s it began to be used for a distinct genre, often characterized as a softer alternative to rock and roll. The period of the later 1950s and early 1960s has traditionally been seen as an era of hiatus for rock and roll. <strong>Cliff Richard</strong> had the first British rock and roll hit with <strong>"Move It"</strong>, effectively ushering in the sound of British rock. Significant was the advent of soul music, developing out of rhythm and blues with a re-injection of gospel music and pop, led by pioneers like <strong>Ray Charles</strong>, <strong>Marvin Gaye</strong>, <strong>James Brown</strong>, <strong>Aretha Franklin</strong>, <strong>Curtis Mayfield</strong> and <strong>Stevie Wonder</strong> were dominating the R&B charts and breaking through into the main pop charts.</dd>
+        <dt class = "click">Surf Music</dt>
+        <dd class = "details">Surf music achieved its greatest commercial success as vocal music, particularly the work of <strong>the Beach Boys</strong>, formed in 1961 in Southern California. The surf music craze and the careers of almost all surf acts was effectively ended by the arrival of the British Invasion from 1964.</dd>
+        <dt class = "click">British Invasion</dt>
+        <dd class = "details">By the end of 1962, what would become the British rock scene had started with beat groups like <strong>The Beatles</strong>, <strong>Gerry & the Pacemakers</strong> and <strong>the Searchers</strong> from Liverpool and <strong>Freddie and the Dreamers</strong>, <strong>Herman's Hermits</strong> and <strong>the Hollies</strong> from Manchester. They drew on a wide range of American influences including 1950s rock and roll, soul, rhythm and blues, and surf music, initially reinterpreting standard American tunes and playing for dancers. The British Invasion helped internationalize the production of rock and roll, opening the door for subsequent British (and Irish) performers to achieve international success. In America it arguably spelled the end of instrumental surf music, vocal girl groups and the teen idols, that had dominated the American charts in the late 1950s and 1960s.</dd>
+        <dt class = "click">Garage Rock</dt>
+        <dd class = "details">Garage rock was a raw form of rock music, particularly prevalent in North America in the mid-1960s and so called because of the perception that it was rehearsed in the suburban family garage. Garage rock songs often revolved around the traumas of high school life. The lyrics and delivery tended to be more aggressive than was common at the time, often with growled or shouted vocals that dissolved into incoherent screaming. The British Invasion greatly influenced garage bands, providing them with a national audience, leading many to adopt a British influence, and encouraging many more groups to form. By 1968 the style largely disappeared from the national charts and at the local level as amateur musicians faced college, work or the draft.</dd>
+      </dl>
+    </div>
+    <div id = "three">
+      <h3>Psychedelia and progressivism</h3>
+      <a target = "_blank" href = "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png">
+        <img class = "photo" src = "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png" alt = "jimi hendrix 1967" title = "Image Credits">
+      </a>
+      <p class = "photo"><strong>Jimi Hendrix</strong>, 1967</p>
+      <dl>
+        <dt>Blues Rock</dt>
+        <dd>Although the first impact of the British Invasion on American popular music was through beat and R&B based acts, the impetus was soon taken up by a second wave of bands that drew their inspiration more directly from American blues, including <strong>the Rolling Stones</strong> and <strong>the Yardbirds</strong>. In America, blues rock had been pioneered in the early 1960s by guitarist <strong>Lonnie Mack</strong>, but the genre began to take off in the mid-1960s as acts developed a sound similar to British blues musicians. Key acts included <strong>Paul Butterfield</strong>, <strong>Canned Heat</strong>, <strong>Janis Joplin</strong>, <strong>Johnny Winter</strong> and <strong>Jimi Hendrix</strong>.</dd>
+        <dt class = "click">Folk Rock</dt>
+        <dd class = "details">By the 1960s, the scene that had developed out of the American folk music revival had grown to a major movement, utilising traditional music and new compositions in a traditional style, usually on acoustic instruments. In the early sixties figures such as <strong>Joan Baez</strong> and <strong>Bob Dylan</strong> had come to the fore in this movement as singer-songwriters. Early attempts to combine elements of folk and rock included <strong>the Animals</strong> and <strong>the Beatles</strong>.</dd>
+        <dt class = "click">Psychedelic Rock</dt>
+        <dd class = "details">Psychedelic music's LSD-inspired vibe began in the folk scene. The first group to advertise themselves as psychedelic rock were <strong>the 13th Floor Elevators</strong>. The Beatles introduced many of the major elements of the psychedelic sound to audiences in this period. Psychedelic rock particularly took off in California.</dd>
+        <dt class = "click">Progressive Rock</dt>
+        <dd class = "details">Progressive rock moved beyond established musical formulas by experimenting with different instruments, song types, and forms. From the mid-1960s <strong>the Left Banke</strong>, <strong>the Beatles</strong>, <strong>the Rolling Stones</strong> and <strong>the Beach Boys</strong>, had pioneered the inclusion of harpsichords, wind, and string sections on their recordings to produce a form of Baroque rock. <strong>The Moody Blues</strong> used a full orchestra on their album and subsequently created orchestral sounds with synthesizers. Classical orchestration, keyboards, and synthesizers were a frequent addition to the established rock format of guitars, bass and drums in subsequent progressive rock.</dd>
+        <dt class = "click">Jazz Rock</dt>
+        <dd class = "details">In the late 1960s jazz rock emerged as a distinct subgenre out of the blues rock, psychedelic and progressive rock scenes, mixing the power of rock with the musical complexity and improvisational elements of jazz. Many early US rock and roll musicians had begun in jazz and carried some of these elements into the new music. In Britain the subgenre of blues rock, and many of its leading figures, had emerged from the British jazz scene. The first group of bands to self-consciously use the label were R&B oriented white rock bands that made use of jazzy horn sections, to become some of the most commercially successful acts of the later 1960s and early 1970s.</dd>
+      </dl>
+    </div>
+    <div id = "four">
+      <h3>Early 1970s</h3>
+      <a target = "_blank" href = "https://upload.wikimedia.org/wikipedia/commons/5/59/LedZeppelinChicago75_2.jpg">
+        <img class = "photo" src = "https://upload.wikimedia.org/wikipedia/commons/5/59/LedZeppelinChicago75_2.jpg" alt = "led zeppelin chicago 1975" title = "Image Credits">
+      </a>
+      <p class = "photo"><strong>Led Zeppelin</strong>, Chicago 1975</p>
+      <dl>
+        <dt>Roots Rock</dt>
+        <dd>Roots rock is the term now used to describe a move away from what some saw as the excesses of the psychedelic scene, to a more basic form of rock and roll that incorporated its original influences, particularly country and folk music, leading to the creation of country rock and Southern rock. In 1968, <strong>Gram Parsons</strong> recorded <strong>Safe at Home</strong>, arguably the first true country rock album. The founders of Southern rock are usually thought to be <strong>the Allman Brothers Band</strong>, who developed a distinctive sound, largely derived from blues rock, but incorporating elements of boogie, soul, and country in the early 1970s.</dd>
+        <dt class = "click">Glam Rock</dt>
+        <dd class = "details">Glam rock emerged from the English psychedelic and art rock scenes of the late 1960s and can be seen as both an extension of and reaction against those trends. Musically diverse, varying between the simple rock and roll revivalism of figures like <strong>Alvin Stardust</strong> to the complex art rock of <strong>Roxy Music</strong>, and can be seen as much as a fashion as a musical subgenre. Visually it was a mesh of various styles, ranging from 1930s Hollywood glamor, through 1950s pin-up sex appeal, pre-war Cabaret theatrics, Victorian literary and symbolist styles, science fiction, to ancient and occult mysticism and mythology; manifesting itself in outrageous clothes, makeup, hairstyles, and platform-soled boots.</dd>
+        <dt class = "click">Soft Rock, Hard Rock and Early Heavy Metal</dt>
+        <dd class = "details">From the late 1960s it became common to divide mainstream rock music into soft and hard rock. Soft rock was often derived from folk rock, using acoustic instruments and putting more emphasis on melody and harmonies. Major artists included <strong>Carole King</strong>, <strong>Cat Stevens</strong> and <strong>James Taylor</strong>. It reached its commercial peak in the mid- to late 1970s with acts like <strong>Billy Joel</strong>, <strong>America</strong> and the reformed <strong>Fleetwood Mac</strong>. From the late 1960s the term "heavy metal" began to be used to describe some hard rock played with even more volume and intensity, first as an adjective and by the early 1970s as a noun. The term was first used in music in <strong>Steppenwolf's "Born to Be Wild"</strong> and began to be associated with pioneer bands.</dd>
+        <dt class = "click">Christian Rock</dt>
+        <dd class = "details">Rock, mostly the heavy metal genre, has been criticized by some Christian leaders, who have condemned it as immoral, anti-Christian and even demonic. However, Christian rock began to develop in the late 1960s and emerged as a subgenre in the 1970s with artists like <strong>Larry Norman</strong>, usually seen as the first major "star" of Christian rock. The genre has been particularly popular in the United States.</dd>
+      </dl>
+    </div>
+    <div id = "five">
+      <h3>Punk era</h3>
+      <a target = "_blank" href = "https://upload.wikimedia.org/wikipedia/commons/2/2e/Blondie_%28Debbie_Harry%29_One.jpg">
+        <img class = "photo" src = "https://upload.wikimedia.org/wikipedia/commons/2/2e/Blondie_%28Debbie_Harry%29_One.jpg" alt = "deborah harry blondie toronto 1977" title = "Image Credits">
+      </a>
+      <p class = "photo"><strong>Blondie</strong>, Toronto 1977</p>
+      <dl>
+        <dt>Punk Rock</dt>
+        <dd>Punk rock was developed between 1974 and 1976 in the United States and the United Kingdom. Rooted in garage rock and other forms of what is now known as protopunk music, punk rock bands eschewed the perceived excesses of mainstream 1970s rock. They created fast, hard-edged music, typically with short songs, stripped-down instrumentation, and often political, anti-establishment lyrics.</dd>
+        <dt class = "click">New Wave</dt>
+        <dd class = "details">Although punk rock was a significant social and musical phenomenon, it achieved less in the way of record sales or American radio airplay. Punk rock had attracted devotees from the art and collegiate world and soon bands sporting a more literate, arty approach, such as <strong>Talking Heads</strong> and <strong>Devo</strong> began to infiltrate the punk scene; in some quarters the description "new wave" began to be used to differentiate these less overtly punk bands. Record executives, who had been mostly mystified by the punk movement, recognized the potential of the more accessible new wave acts and began aggressively signing and marketing any band that could claim a remote connection to punk or new wave.</dd>
+        <dt class = "click">Post-Punk</dt>
+        <dd class = "details">If hardcore most directly pursued the stripped down aesthetic of punk, and new wave came to represent its commercial wing, post-punk emerged in the later 1970s and early 1980s as its more artistic and challenging side. Major influences beside punk bands were <strong>the Velvet Underground</strong>, <strong>Frank Zappa</strong> and <strong>Captain Beefheart</strong>, and the New York-based no wave scene which placed an emphasis on performance, including bands such as <strong>James Chance and the Contortions</strong>, <strong>DNA</strong> and <strong>Sonic Youth</strong>.</dd>
+        <dt class = "click">Heartland Rock</dt>
+        <dd class = "details">American working-class oriented heartland rock, characterized by a straightforward musical style, and a concern with the lives of ordinary, blue-collar American people, developed in the second half of the 1970s. The term heartland rock was first used to describe Midwestern arena rock groups like <strong>Kansas</strong>, <strong>REO Speedwagon</strong> and <strong>Styx</strong>, but which came to be associated with a more socially concerned form of roots rock more directly influenced by folk, country and rock and roll. It has been seen as an American Midwest and Rust Belt counterpart to West Coast country rock and the Southern rock of the American South. Led by figures who had initially been identified with punk and New Wave, it was most strongly influenced by acts such as <strong>Bob Dylan</strong>, <strong>the Byrds</strong>, <strong>Creedence Clearwater Revival</strong> and <strong>Van Morrison</strong> and <strong>the Rolling Stones</strong>.</dd>
+        <dt class = "click">Emergence of Alternative Rock</dt>
+        <dd class = "details">The term alternative rock was coined in the early 1980s to describe rock artists who did not fit into the mainstream genres of the time. Bands dubbed "alternative" had no unified style, but were all seen as distinct from mainstream music. Alternative bands were linked by their collective debt to punk rock, through hardcore, New Wave or the post-punk movements. Important alternative rock bands of the 1980s in the US included <strong>R.E.M.</strong>, <strong>Jane's Addiction</strong>, <strong>Sonic Youth</strong>, <strong>the Pixies</strong>, <strong>the Cure</strong>, <strong>New Order</strong> and <strong>the Smiths</strong>. Artists were largely confined to independent record labels, building an extensive underground music scene based on college radio, fanzines, touring, and word-of-mouth. They rejected the dominant synth-pop of the early 1980s, marking a return to group-based guitar rock.</dd>
+      </dl>
+    </div>
+    <div id = "six">
+      <h3>Alternative</h3>
+      <a target = "_blank" href = "https://upload.wikimedia.org/wikipedia/commons/1/19/Nirvana_around_1992.jpg">
+        <img class = "photo" src = "https://upload.wikimedia.org/wikipedia/commons/1/19/Nirvana_around_1992.jpg" alt = "nirvana 1992" title = "Image Credits">
+      </a>
+      <p class = "photo"><strong>Nirvana</strong>, 1992</p>
+      <dl>
+        <dt>Grunge</dt>
+        <dd>Disaffected by commercialized and highly produced pop and rock in the mid-1980s, bands in Washington state formed a new style of rock which sharply contrasted with the mainstream music of the time. The developing genre came to be known as "grunge", a term descriptive of the dirty sound of the music and the unkempt appearance of most musicians, who actively rebelled against the over-groomed images of other artists. Grunge fused elements of hardcore punk and heavy metal into a single sound, and made heavy use of guitar distortion, fuzz and feedback. The lyrics were typically apathetic and angst-filled, and often concerned themes such as social alienation and entrapment, although it was also known for its dark humor and parodies of commercial rock.</dd>
+        <dt class = "click">Britpop</dt>
+        <dd class = "details">Britpop emerged from the British alternative rock scene of the early 1990s and was characterised by bands particularly influenced by British guitar music of the 1960s and 1970s. <strong>The Smiths</strong> were a major influence. The movement has been seen partly as a reaction against various U.S.-based, musical and cultural trends in the late 1980s and early 1990s, particularly the grunge phenomenon and as a reassertion of a British rock identity. Britpop was varied in style, but often used catchy tunes and hooks, beside lyrics with particularly British concerns and the adoption of the iconography of the 1960s British Invasion, including the symbols of British identity previously utilised by the mods.</dd>
+        <dt class = "click">Post-Grunge</dt>
+        <dd class = "details">The term post-grunge was coined for the generation of bands that followed the emergence into the mainstream and subsequent hiatus of the Seattle grunge bands. Post-grunge bands emulated their attitudes and music, but with a more radio-friendly commercially oriented sound. Often they worked through the major labels and came to incorporate diverse influences from jangle pop, pop-punk, alternative metal or hard rock. The term post-grunge originally was meant to be pejorative, suggesting that they were simply musically derivative, or a cynical response to an "authentic" rock movement. Originally, grunge bands that emerged when grunge was mainstream and were suspected of emulating the grunge sound were pejoratively labelled as post-grunge. From 1994, former <strong>Nirvana</strong> drummer <strong>Dave Grohl's new band</strong>, <strong>the Foo Fighters</strong>, helped popularize the genre and define its parameters.</dd>
+        <dt class = "click">Pop-Punk</dt>
+        <dd class = "details">The origins of 1990s pop punk can be seen in the more song-oriented bands of the 1970s punk movement like <strong>Buzzcocks</strong> and <strong>the Clash</strong>, commercially successful new wave acts such as<strong>the Jam</strong> and <strong>the Undertones</strong>, and the more hardcore-influenced elements of alternative rock in the 1980s. Pop-punk tends to use power-pop melodies and chord changes with speedy punk tempos and loud guitars. Punk music provided the inspiration for some California-based bands on independent labels in the early 1990s, including <strong>Rancid</strong>, <strong>Pennywise</strong>, <strong>Weezer</strong> and <strong>Green Day</strong>.</dd>
+        <dt class = "click">Indie Rock</dt>
+        <dd class = "details">In the 1980s the terms indie rock and alternative rock were used interchangeably. By the mid-1990s, as elements of the movement began to attract mainstream interest, the term alternative began to lose its meaning. Those bands following the less commercial contours of the scene were increasingly referred to by the label indie. The indie rock movement encompassed a wide range of styles, from hard-edged, grunge-influenced bands like <strong>the Cranberries</strong> and <strong>Superchunk</strong>, through do-it-yourself experimental bands like <strong>Pavement</strong>, to punk-folk singers such as <strong>Ani DiFranco</strong>. It has been noted that indie rock has a relatively high proportion of female artists compared with preceding rock genres, a tendency exemplified by the development of feminist-informed <strong>Riot Grrrl</strong> music.</dd>
+        <dt class = "click">Alternative Metal, Rap Rock and Nu Metal</dt>
+        <dd class = "details">Alternative metal emerged from the hardcore scene of alternative rock in the US in the later 1980s, but gained a wider audience after grunge broke into the mainstream in the early 1990s. Early alternative metal bands mixed a wide variety of genres with hardcore and heavy metal sensibilities, with acts like <strong>Jane's Addiction</strong> and <strong>Primus</strong> utilizing progressive rock, <strong>Soundgarden</strong> and <strong>Corrosion of Conformity</strong> using garage punk, <strong>the Jesus Lizard</strong> and <strong>Helmet</strong> mixing noise rock, <strong>Ministry</strong> and <strong>Nine Inch Nails</strong> influenced by industrial music, <strong>Monster Magnet</strong> moving into psychedelia. </dd>
+        <dt class = "click">Post-Britpop</dt>
+        <dd class = "details">From about 1997, as dissatisfaction grew with the concept of Cool Britannia, and Britpop as a movement began to dissolve, emerging bands began to avoid the Britpop label while still producing music derived from it. Many of these bands tended to mix elements of British traditional rock, particularly <strong>the Beatles</strong>, <strong>Rolling Stones</strong> and <strong>Small Faces</strong>, with American influences, including post-grunge. Drawn from across the United Kingdom, the themes of their music tended to be less parochially centered on British, English and London life and more introspective than had been the case with Britpop at its height. This, beside a greater willingness to engage with the American press and fans, may have helped some of them in achieving international success.</dd>
+      </dl>
+    </div>
+    <div id = "seven">
+      <h3>2000s and present</h3>
+      <a target = "_blank" href = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Arctic_Monkeys_-_Orange_Stage_-_Roskilde_Festival_2014.jpg/1280px-Arctic_Monkeys_-_Orange_Stage_-_Roskilde_Festival_2014.jpg">
+        <img class = "photo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Arctic_Monkeys_-_Orange_Stage_-_Roskilde_Festival_2014.jpg/1280px-Arctic_Monkeys_-_Orange_Stage_-_Roskilde_Festival_2014.jpg" alt = "arctic monkeys roskilde festival 2014" title = "Image Credits">
+      </a>
+      <p class = "photo"><strong>Arctic Monkeys</strong>, Roskilde Festival 2014</p>
+      <dl>
+        <dt>Post-Hardcore and Emo</dt>
+        <dd>Post-hardcore developed in the US in the early to mid-1980s, with bands that were inspired by the do-it-yourself ethics and guitar-heavy music of hardcore punk, but influenced by post-punk. Emo also emerged from the hardcore scene in 1980s Washington, initially as <strong>emocore</strong>, used as a term to describe bands who favored expressive vocals over the more common abrasive, barking style. The term emo expanded beyond the musical genre, becoming associated with fashion, a hairstyle and any music that expressed emotion. By 2003 post-hardcore bands had also caught the attention of major labels and began to enjoy mainstream success in the album charts. A number of these bands were seen as a more aggressive offshoot of emo and given the often vague label of <strong>screamo</strong>.</dd>
+        <dt class = "click">Garage rock</dt>
+        <dd class = "details">In the early 2000s, a new group of bands that played a stripped down and back-to-basics version of guitar rock, emerged into the mainstream. They were variously characterised as part of a garage rock, post-punk or new wave revival. There had been attempts to revive garage rock and elements of punk in the 1980s and 1990s and by 2000 scenes had grown up in several countries. The commercial breakthrough from these scenes was led by four bands: <strong>the Strokes</strong>, <strong>the White Stripes</strong>, <strong>the Hives</strong> and <strong>the Vines</strong>. A second wave of bands that gained international recognition due to the movement included <strong>the Killers</strong>, <strong>Kings of Leon</strong>, <strong>Arctic Monkeys</strong>, <strong>Kaiser Chiefs</strong>, <strong>Jet</strong> and <strong>the Datsuns</strong>.</dd>
+        <dt class = "click">Digital Electronic Rock</dt>
+        <dd class = "details">In the 2000s, as computer technology became more accessible and music software advanced, it became possible to create high quality music using little more than a single laptop computer. This resulted in a massive increase in the amount of home-produced electronic music available to the general public via the expanding internet, and new forms of performance such as laptronica and live coding. These techniques also began to be used by existing bands and by developing genres that mixed rock with digital techniques and sounds, including indie electronic, electroclash, dance-punk and new rave.</dd>
+      </dl>
+    </div>
+    <button id = "decrease" type = "button" name = "button" onclick = "resizeFontSize(-1)">
+      <img src = "images/minus.png" alt = "minus button">
+    </button>
+    <button id = "increase" type = "button" name = "button" onclick = "resizeFontSize(1)">
+      <img src = "images/plus.png" alt = "plus button">
+    </button>
+    <script>
+      function showText(event) {
+        if (event.target && event.target.className == 'click') {
+          var text = event.target.nextElementSibling;
+          if (text.style.display == "none") {
+              text.style.display = "block";
+          } else {
+            text.style.display = "none";
+            }
+          }
+      }
+      document.addEventListener('click', showText, true);
+    </script>
+  </body>
+</html>

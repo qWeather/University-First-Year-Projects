@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "styles/store.css">
+    <link rel = "stylesheet" type = "text/css" href = "styles/website_style.css">
+    <script src = "scripts/website_script.js"></script>
+    <link href = "https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+    <title>Smooth Strings - Shop</title>
+  </head>
+  <body>
+    <a href = "main_page.html" title = "Main Page"><h1 id = "banner"> Smooth Strings </h1></a>
+    <ul id = "menu">
+      <li><a href = "main_page.html">Main Page&nbsp;</a></li>
+      <li><a href = "store.html" >Shop&nbsp;</a></li>
+      <li style = "float:right"><a href = "form.html" >Send Feedback&nbsp;</a></li>
+      <li style = "float: right"><a href = "find_out_more.html" >Find out more&nbsp;</a></li>
+    </ul>
+    <header>
+      <h1>Welcome to the STORE!</h1>
+      <p>Take a seat and enjoy the bumpy ride while you're scrolling through our products sections!</p>
+      <p>I hope you'll find what you're looking for and well..<i>Keep on rockin'!</i></p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href = "#1">Instruments with Strings</a></li>
+        <li><a href = "#2">Instruments with Keys</a></li>
+        <li><a href = "#3">Percussion Instruments</a></li>
+        <li><a href = "#4">Amplifiers</a></li>
+        <li><a href = "#5">Accessories</a></li>
+        <li><a href = "#6">Personal Details</a></li>
+        <li><a href = "cv.html" id = "cv"><span>Page Editor</span></a></li>
+      </ul>
+    </nav>
+    <form id = "shopping" onsubmit = "return validation(this) && summary(this)">
+      <h2><a id = "1">Instruments with Strings</a></h2>
+      <fieldset class = "products">
+          <h3>Fender Squier Bullet Stratocaster</h3>
+          <a target = "_blank" href = "https://www.promenademusic.co.uk/image/cache/data/Squier-bullet-tremolo-arctic-white-1200x1200.jpg">
+            <img class = "productimage" src = "https://www.promenademusic.co.uk/image/cache/data/Squier-bullet-tremolo-arctic-white-1200x1200.jpg" alt = "red fender guitar" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Linden Body</li>
+            <li>Maple Neck</li>
+            <li>Indian Laurel Fretboard</li>
+            <li>21 Medium Frets</li>
+            <li>Hard Tail Bridge</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">150</p>
+          Quantity: <input type = "text" id = "quantity1" name = "quantity" size = "1">
+          <button id = "addToCart1" type = "button" onclick = "add_product1()">Add to Cart</button>
+          <button id = "removeFromCart1" type = "button" onclick = "remove_product1()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Yamaha F310</h3>
+          <a target = "_blank" href = "https://d1aeri3ty3izns.cloudfront.net/media/27/270638/1200/preview.jpg">
+            <img class = "productimage" src = "https://d1aeri3ty3izns.cloudfront.net/media/27/270638/1200/preview.jpg" alt = "yamaha natural acoustic guitar" title = "Image Credits" >
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Spruce Top</li>
+            <li>Meranti Bottom and Sides</li>
+            <li>Nato Neck</li>
+            <li>Rosewood Fretboard</li>
+            <li>634mm Scale</li>
+            <li>Nut Width: 43mm</li>
+            <li>Chrome, open machine heads</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">80</p>
+          Quantity: <input type = "text" id = "quantity2" name = "quantity" size = "1">
+          <button id = "addToCart2" type = "button" onclick = "add_product2()">Add to Cart</button>
+          <button id = "removeFromCart2" type = "button" onclick = "remove_product2()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Baton Rouge V2</h3>
+          <a target = "_blank" href = "https://www.backalleymusic.co.uk/contents/media/l_baton_rouge_v2_sun_tenor_ukulele__.jpg">
+            <img class = "productimage" src = "https://www.backalleymusic.co.uk/contents/media/l_baton_rouge_v2_sun_tenor_ukulele__.jpg" alt = "baton rouge v2 uke" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Body: Mahogany</li>
+            <li>Neck: Mahogany</li>
+            <li>Fretboard: Walnut</li>
+            <li>Newbone saddle & nut</li>
+            <li>Aquila strings</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">150</p>
+          Quantity: <input type = "text" id = "quantity3" name = "quantity" size = "1">
+          <button id = "addToCart3" type = "button" onclick = "add_product3()">Add to Cart</button>
+          <button id = "removeFromCart3" type = "button" onclick = "remove_product3()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Marcus Miller V7 Bass</h3>
+          <a target = "_blank" href = "https://www.pourlesmusiciens.com/medias/1778/marcus-miller-v7-vintage-ash-4-string-2nd-generation-mn-sans-housse-large-154072.jpg">
+            <img class = "productimage" src = "https://www.pourlesmusiciens.com/medias/1778/marcus-miller-v7-vintage-ash-4-string-2nd-generation-mn-sans-housse-large-154072.jpg" alt = "marcus miller v7 swamp ash" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Maple fretboard</li>
+            <li>20 Medium Small Frets</li>
+            <li>Pickups: 2 Marcus Super-J Revolution Jazz single coils</li>
+            <li>Marcus Big Mass bridge</li>
+            <li>Chrome hardware</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">900</p>
+          Quantity: <input type = "text" id = "quantity4" name = "quantity" size = "1">
+          <button id = "addToCart4" type = "button" onclick = "add_product4()">Add to Cart</button>
+          <button id = "removeFromCart4" type = "button" onclick = "remove_product4()">Remove</button>
+        </fieldset>
+      <h2><a id = "2">Instruments with Keys</a></h2>
+      <fieldset class = "products">
+          <h3>Yamaha PSR-E463</h3>
+          <a target = "_blank" href = "https://www.thomann.de/pics/bdb/432932/13165166_800.jpg">
+            <img class = "productimage" src = "https://www.thomann.de/pics/bdb/432932/13165166_800.jpg" alt = "yamaha psr-e463 keyboard" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>61 Standard keys with touch dynamics</li>
+            <li>758 Sounds, 235 Styles</li>
+            <li>Effects: Reverb, chorus, master EQ, harmony</li>
+            <li>Speaker system: 2x 6 Watts</li>
+            <li>Dimensions (W x D x H): 946 x 404 x 139 mm</li>
+            <li>Colour: black</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">1500</p>
+          Quantity: <input type = "text" id = "quantity5" name = "quantity" size = "1">
+          <button id = "addToCart5" type = "button" onclick = "add_product5()">Add to Cart</button>
+          <button id = "removeFromCart5" type = "button" onclick = "remove_product5()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Yamaha YDP-143 B Arius</h3>
+          <a target = "_blank" href = "https://www.thomann.de/pics/bdb/384489/12787707_800.jpg">
+            <img class = "productimage" src = "https://www.thomann.de/pics/bdb/384489/12787707_800.jpg" alt = "yamaha ydp-143" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>GHS Keyboard with 88 keys</li>
+            <li>10 Voices</li>
+            <li>3 Pedals</li>
+            <li>Speaker system: 2 x 6 Watt</li>
+            <li>Dimensions (W x H x D): 1357 x 815 x 422 mm</li>
+            <li>Colour: black</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">2500</p>
+          Quantity: <input type = "text" id = "quantity6" name = "quantity" size = "1">
+          <button id = "addToCart6" type = "button" onclick = "add_product6()">Add to Cart</button>
+          <button id = "removeFromCart6" type = "button" onclick = "remove_product6()">Remove</button>
+        </fieldset>
+      <h2><a id = "3">Percussion Instruments</a></h2>
+      <fieldset class = "products">
+          <h3>Roland TD-17KVX E-Drum Set</h3>
+          <a target = "_blank" href = "https://d1aeri3ty3izns.cloudfront.net/media/36/362498/1200/preview_1.jpg">
+            <img class = "productimage" src = "https://d1aeri3ty3izns.cloudfront.net/media/36/362498/1200/preview_1.jpg" alt = "roland td-17kvx" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>310 Sounds</li>
+            <li>50 Pbutton kits</li>
+            <li>Reverb, compressor and equalizer adjustable on each channel</li>
+            <li>Global bass and treble equalizer</li>
+            <li>Sounds can be changed in pitch, damping, snare carpet tension and snare buzz</li>
+            <li>2x 6.3 mm jack trigger inputs for additional pads</li>
+            <li>Comes in only one colour</li>
+          </ul>
+          <ul>
+            <li>Set configuration:</li>
+            <li>1 x 12" Two zone PDX-12 snare mesh head pad</li>
+            <li>3 x 8" Two zone PDX-8 tom mesh head pad</li>
+            <li>1 x 10" KD-10 Bass drum mesh head pad</li>
+            <li>1 x Two zone VH-10 hi-hat pad and controller</li>
+            <li>2 x 12" Two zone CY-12 crash / ride pad including stop function</li>
+            <li>1 x 13" Three zone CY-13R ride pad</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">1000</p>
+          Quantity: <input type = "text" id = "quantity7" name = "quantity" size = "1">
+          <button id = "addToCart7" type = "button" onclick = "add_product7()">Add to Cart</button>
+          <button id = "removeFromCart7" type = "button" onclick = "remove_product7()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>LP LPH601-SMC Bongos</h3>
+          <a target = "_blank" href = "https://www.thomann.de/pics/bdb/298050/10594150_800.jpg">
+            <img class = "productimage" src = "https://www.thomann.de/pics/bdb/298050/10594150_800.jpg" alt = "lp lph601-smc bongos" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Sizes: 6.75" + 8"</li>
+            <li>Finish: Mahogany (matte)</li>
+            <li>Material: Double layered rubberwood</li>
+            <li>Chrome hardware</li>
+            <li>Fitted with Remo Fiberskyn 3 skins</li>
+            <li>Comes in only one colour</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">100</p>
+          Quantity: <input type = "text" id = "quantity8" name = "quantity" size = "1">
+          <button id = "addToCart8" type = "button" onclick = "add_product8()">Add to Cart</button>
+          <button id = "removeFromCart8" type = "button" onclick = "remove_product8()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Schlagwerk CP4007 Cajon</h3>
+          <a target = "_blank" href = "https://www.thomann.de/pics/bdb/131273/12656286_800.jpg">
+            <img class = "productimage" src = "https://www.thomann.de/pics/bdb/131273/12656286_800.jpg" alt = "schlagwerk cp4007 cajon" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Burl veneer</li>
+            <li>Sound: Dry bass, distinct middles</li>
+            <li>Made in Germany</li>
+            <li>Dimensions: 50 x 30 x 30 cm</li>
+            <li>Comes in only one colour</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">60</p>
+          Quantity: <input type = "text" id = "quantity9" name = "quantity" size = "1">
+          <button id = "addToCart9" type = "button" onclick = "add_product9()">Add to Cart</button>
+          <button id = "removeFromCart9" type = "button" onclick = "remove_product9()">Remove</button>
+        </fieldset>
+      <h2><a id = "4">Amplifiers</a></h2>
+      <fieldset class = "products">
+          <h3>Fender Frontman 10G</h3>
+          <a target = "_blank" href = "https://images-na.ssl-images-amazon.com/images/I/A1zZaYpdfDL._SY355_.jpg">
+            <img class = "productimage" src = "https://images-na.ssl-images-amazon.com/images/I/A1zZaYpdfDL._SY355_.jpg" alt = "fender frontman amplifier" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>10 W</li>
+            <li>1 Channel</li>
+            <li>2 Band EQ</li>
+            <li>Overdrive switch</li>
+            <li>Input for CD / MP3 players</li>
+            <li>Headphone output</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">150</p>
+          Quantity: <input type = "text" id = "quantity10" name = "quantity" size = "1">
+          <button id = "addToCart10" type = "button" onclick = "add_product10()">Add to Cart</button>
+          <button id = "removeFromCart10" type = "button" onclick = "remove_product10()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Roland Mobile Cube B-Stock</h3>
+          <a target = "_blank" href = "https://www.thomann.de/pics/bdb/207926/7462187_800.jpg">
+            <img class = "productimage" src = "https://www.thomann.de/pics/bdb/207926/7462187_800.jpg" alt = "roland mobile cube b-stock" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Amplifier power: 2 x 2.5 Watt</li>
+            <li>Speakers: 2 x 4"</li>
+            <li>Headphone connection: 3.5 mm jack</li>
+            <li>Equalizer and echo / stereo reverb for microphone and instrument input</li>
+            <li>CD / MP3 player, drum machine</li>
+            <li>Inputs for microphone (jack) and instrument MONO / STEREO (2 x keyboard jack, electric guitar, acoustic guitar, bass)</li>
+            <li>Dimensions (L x W x H): 280 x 108 x 177 mm</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">200</p>
+          Quantity: <input type = "text" id = "quantity11" name = "quantity" size = "1">
+          <button id = "addToCart11" type = "button" onclick = "add_product11()">Add to Cart</button>
+          <button id = "removeFromCart11" type = "button" onclick = "remove_product11()">Remove</button>
+        </fieldset>
+      <h2><a id = "5">Accessories</a></h2>
+      <fieldset class = "products">
+          <h3>Martin Premium Delrin Guitar Picks</h3>
+          <a target = "_blank" href = "https://sep.yimg.com/ay/stringsandbeyond/cf-martin-premium-delrin-guitar-picks-12-pack-10.gif">
+              <img class = "productimage" src = "https://sep.yimg.com/ay/stringsandbeyond/cf-martin-premium-delrin-guitar-picks-12-pack-10.gif" alt = "martin delrin guitar picks" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Pack of 12</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">10</p>
+          Quantity: <input type = "text" id = "quantity12" name = "quantity" size = "1">
+          <button id = "addToCart12" type = "button" onclick = "add_product12()">Add to Cart</button>
+          <button id = "removeFromCart12" type = "button" onclick = "remove_product12()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Fender Electric Guitar Strings</h3>
+          <a target = "_blank" href = "https://www.stringsbymail.com/images/Fender%20250L.jpg">
+            <img class = "productimage" src = "https://www.stringsbymail.com/images/Fender%20250L.jpg" alt = "fender 250L" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Light Gauges: .009, .011, .016, .024, .032, .042</li>
+            <li>Medium Gauges: .011, .014, .018, .028, .038, .049</li>
+            <li>Heavy Gauges: .012, .016, .024, .032, .042, .052</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">25</p>
+          Quantity: <input type = "text" id = "quantity13" name = "quantity" size = "1">
+          <button id = "addToCart13" type = "button" onclick = "add_product13()">Add to Cart</button>
+          <button id = "removeFromCart13" type = "button" onclick = "remove_product13()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>D'Addario Acoustic Guitar Strings</h3>
+          <a target = "_blank" href = "https://www.thomann.de/pics/bdb/147540/10495823_800.jpg">
+            <img class = "productimage" src = "https://www.thomann.de/pics/bdb/147540/10495823_800.jpg" alt = "daddario exp16" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Light Gauges: .012, .016, .024, .032, .042, .053</li>
+            <li>Medium Gauges: .013, .017, .026, .035, .045, .056</li>
+            <li>Heavy Gauges: .014, .018, .027, .039, .049, .059</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">20</p>
+          Quantity: <input type = "text" id = "quantity14" name = "quantity" size = "1">
+          <button id = "addToCart14" type = "button" onclick = "add_product14()">Add to Cart</button>
+          <button id = "removeFromCart14" type = "button" onclick = "remove_product14()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Fender California Cable</h3>
+          <a target = "_blank" href = "https://www.musicjunction.com.au/wp-content/uploads/2015/10/fender-cali-cable-lpb-20ft-2.jpg">
+            <img class = "productimage" src = "https://www.musicjunction.com.au/wp-content/uploads/2015/10/fender-cali-cable-lpb-20ft-2.jpg" alt = "fender california cable series" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Instrument cable</li>
+            <li>Universal use</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">40</p>
+          Quantity: <input type = "text" id = "quantity15" name = "quantity" size = "1">
+          <button id = "addToCart15" type = "button" onclick = "add_product15()">Add to Cart</button>
+          <button id = "removeFromCart15" type = "button" onclick = "remove_product15()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Thomann Guitar Case Single Cut</h3>
+          <a target = "_blank" href = "https://www.thomann.de/pics/bdb/172299/12381902_800.jpg">
+            <img class = "productimage" src = "https://www.thomann.de/pics/bdb/172299/12381902_800.jpg" alt = "thomann guitar case single cut black" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>Weight: 4kg</li>
+            <li>Colour: black</li>
+          </ul>
+          <ul>
+            <li>Interior Dimensions:</li>
+            <li>Length: 100cm</li>
+            <li>Upper Width: 22cm</li>
+            <li>Lower Width: 32.5cm</li>
+            <li>Height: 8cm</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">130</p>
+          Quantity: <input type = "text" id = "quantity16" name = "quantity" size = "1">
+          <button id = "addToCart16" type = "button" onclick = "add_product16()">Add to Cart</button>
+          <button id = "removeFromCart16" type = "button" onclick = "remove_product16()">Remove</button>
+        </fieldset>
+      <fieldset class = "products">
+          <h3>Thomann Acoustic-Steel Gigbag</h3>
+          <a target = "_blank" href = "https://www.thomann.de/pics/bdb/121547/12885887_800.jpg">
+            <img class = "productimage" src = "https://www.thomann.de/pics/bdb/121547/12885887_800.jpg" alt = "thomann acoustic steel gigbag" title = "Image Credits">
+          </a>
+          <img class = "info" src = "images/info.png" alt = "info icon">
+          <ul>
+            <li>With 20 mm foam padding</li>
+            <li>Inner dimensions (L x W x D): 111 x 42 x 13 cm</li>
+            <li>Floor protection for underside of guitar</li>
+            <li>With backpack straps and metal fittings</li>
+            <li>With additional outer pocket for sheet music and accessories</li>
+            <li>Front pocket 1: approx. 37 x 24 x 5 cm</li>
+            <li>Front pocket 2: approx. 33 x 11 x 5 cm</li>
+            <li>Colour: black</li>
+          </ul>
+          <p class = "price"><img src = "images/pound.png" alt = "pound sterling icon">70</p>
+          Quantity: <input type = "text" id = "quantity17" name = "quantity" size = "1">
+          <button id = "addToCart17" type = "button" onclick = "add_product17()">Add to Cart</button>
+          <button id = "removeFromCart17" type = "button" onclick = "remove_product17()">Remove</button>
+          </fieldset>
+      <fieldset id = "personaldetails">
+        <legend id = "6">Personal Details</legend>
+        <div>
+            <label for = "name_personaldetails">Name:</label>
+              <input type = "text" name = "fullname" id = "name_personaldetails" placeholder = "Enter your full name">
+              <span id = "infoBoxName" class = "errorMessage"></span><br><br>
+            <label>Telephone Number:</label>
+              <input type = "tel" name = "telephone"  id = "telephone_personaldetails" placeholder = "Enter your number">
+              <span id = "infoBoxTel" class = "errorMessage"></span><br><br>
+            <label>E-mail:</label>
+              <input type = "email" name = "email" id = "email_personaldetails" placeholder = "Enter your e-mail address">
+              <span id = "infoBoxEmail" class = "errorMessage"></span><br><br>
+            <label>Delivery Address:</label>
+              <textarea name = "address" id = "address_personaldetails" rows = "5" cols = "20"></textarea>
+              <span id = "infoBoxAddress" class = "errorMessage"></span>
+            <label>Delivery Details:</label>
+              <textarea name = "deliverydetails" id = "deliverydetails_personaldetails" rows = "5" cols = "20" placeholder = "Ex: hour when we can deliver, day of delivery etc."></textarea>
+              <span id = "infoBoxDelivery" class = "errorMessage"></span><br>
+            <label class = "termsandconditions">I agree to the Terms and Conditions.</label>
+              <input type = "checkbox" name = "termsandconditions" class = "termsandconditions">
+              <span id = "infoBoxTerms" class = "errorMessage"></span>
+        </div>
+      </fieldset>
+      <input type = "submit" id = "submit" value = "Place Order">
+    </form>
+    <button id = "decrease" type = "button" name = "button-minus" onclick = "resizeFontSize(-1)">
+      <img src = "images/minus.png" alt = "minus button">
+    </button>
+    <button id = "increase" type = "button" name = "button-plus" onclick = "resizeFontSize(1)">
+      <img src = "images/plus.png" alt = "plus button">
+    </button>
+    <script src = "scripts/store.js"></script>
+  </body>
+</html>

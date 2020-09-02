@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <title>Smooth Strings - About</title>
+    <link rel = "stylesheet" type = "text/css" href = "styles/website_style.css">
+    <script src = "scripts/website_script.js"></script>
+    <link href = "https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+    <style>
+      iframe {
+        border-color: #393E41;
+        border-width: 10px;
+        border-style: groove;
+        border-radius: 20px;
+        margin-left: 90px;
+      }
+      h2#move {
+        text-transform: uppercase;
+        color: #F6F7EB;
+        text-shadow: 3px 2px #393E41;
+        font-family: 'ZCOOL KuaiLe', cursive;
+        text-align: center;
+        padding: 5px;
+        margin-top: 250px;
+        margin-bottom: 50px;
+      }
+      h2 {
+        text-transform: uppercase;
+        color: #F6F7EB;
+        text-shadow: 3px 2px #393E41;
+        font-family: 'ZCOOL KuaiLe', cursive;
+        text-align: center;
+        padding: 5px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <audio src = "audio/seven_nation_army.mp3" controls autoplay loop></audio>
+    <a href = "main_page.html" title = "Main Page"><h1 id = "banner"> Smooth Strings </h1></a>
+    <ul id = "menu">
+      <li><a href = "main_page.html">Main Page&nbsp;</a></li>
+      <li><a href = "store.html" >Shop&nbsp;</a></li>
+      <li style = "float:right"><a href = "form.html" >Send Feedback&nbsp;</a></li>
+      <li style = "float: right"><a href = "find_out_more.html" >Find out more&nbsp;</a></li>
+    </ul>
+    <h2 id = "move">Rock throughout the decades</h2>
+    <iframe src = "partB.html" width = "1330" height = "700"></iframe>
+    <h2>... throughout the decades</h2>
+    <iframe src = "partB2.html" width = "1330" height = "700"></iframe>
+    <button id = "decrease" type = "button" name = "button-minus" onclick = "resizeFontSize(-1)">
+      <img src = "images/minus.png" alt = "minus button">
+    </button>
+    <button id = "increase" type = "button" name = "button-plus" onclick = "resizeFontSize(1)">
+      <img src = "images/plus.png" alt = "plus button">
+    </button>
+  </body>
+</html>

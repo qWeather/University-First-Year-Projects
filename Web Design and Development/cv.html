@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <link href = "https://fonts.googleapis.com/css?family=Raleway" rel = "stylesheet">
+    <title>Beatrice Maria Antoniu</title>
+    <style>
+      body {
+        font-family: 'Raleway', sans-serif;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        border-style: ridge;
+        border-width: 10px;
+        text-align: center;
+        border-color: orange;
+        color: #911d1d;
+      }
+      h2 {
+        color: #216664;
+      }
+      h3 {
+        color: #911d1d;
+      }
+      #cvphoto {
+        float: right;
+        width: 200px;
+        height: 250px;
+        border-style: dashed;
+        border-width: 5px;
+        border-color: #911d1d;
+      }
+      div {
+        border-style: inset;
+        border-color: orange;
+        border-width: thin;
+        margin: 100px;
+        margin-bottom: 0;
+        padding: 50px;
+        background-color: lightblue;
+      }
+      .home, .mobile, address {
+      }
+      .description {
+        color: #216664;
+        font-weight: bold;
+      }
+      address:hover {
+        color: white;
+      }
+      img {
+        vertical-align: middle;
+      }
+      button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #393E41;
+        border: none;
+        font-weight: bold;
+        color: #FFFC31;
+        text-align: center;
+        padding: 10px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      button span:after {
+        content: '\00ab';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -10px;
+        transition: 0.5s;
+      }
+      button:hover span {
+        padding-left: 20px;
+      }
+      button:hover span:after {
+        opacity: 1;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Beatrice Maria Antoniu</h1>
+    <div id = "contactdetails">
+      <img src = "images/cv.jpg" alt = "cv" id = "cvphoto" title = "Beatrice - Student 1">
+      <h3><img src = "images/address.png" alt = "pin location icon">Address:</h3>
+      <p class = "home">Flat 7, Norwood House, Poplar High Street, London, E14 0AR</p>
+      <h3><img src = "images/email.png" alt = "email icon">Email:</h3>
+      <a href="mailto:w1688177@my.westminster.ac.uk">
+        <address>w1688177@my.westminster.ac.uk</address>
+      </a>
+      <h3><img src = "images/mobile.png" alt = "call icon">Mobile:</h3>
+      <p class = "mobile">07551353263</p>
+      <p class = "description">A first year Computer Science student with excellent communication and customer care skills, gained through being a waitress/barista.</p>
+    </div>
+    <div id = "employment">
+      <h2><img src = "images/employment.png" alt = "work icon">Employment</h2>
+      <ol>
+        <li>September 2018 - January 2019 <b>Waitress/Barista</b>, Byblos Harbour</li>
+      </ol>
+      <ul>
+        <li>Followed a various number of tasks such as:</li>
+        <li>Worked the till and managed the tables;</li>
+        <li>Took orders, served the customers and prepared drinks;</li>
+        <li>General cleaning.</li>
+      </ul>
+      <ol start = "2">
+        <li>January 2019 - present <b>Waitress</b>, Yuhoki</li>
+      </ol>
+    </div>
+    <div id = "education">
+      <h2><img src = "images/education.png" alt = "graduate cap icon">Education</h2>
+      <h3>College</h3>
+      <dl>
+        <dt>September 2014 - June 2018 <b>Ion Neculce National College</b>, Bucharest</dt>
+        <dd><b><img src = "images/diploma.png" alt = "diploma icon">Romanian Diploma de Baccalaureate</b>: Physics (91%), Maths (80%), Romanian - Literature and Grammar (90%)</dd>
+      </dl>
+      <h3>University</h3>
+      <dl>
+        <dt>September 2018 - June 2021 <b>University of Westminster</b>, London</dt>
+        <dd><b>BSc (Hons) Computer Science</b></dd>
+      </dl>
+    </div>
+    <div id = "skills">
+      <h2><img src = "images/skills.png" alt = "skills bulb icon">Skills</h2>
+      <h3>IT:</h3>
+      <ul>
+        <li>HTML/CSS/JavaScript (basic skills); Python/Java/C++ (basic skills)</li>
+        <li>Microsoft Office Specialist Word 2016</li>
+      </ul>
+      <h3>Languages and other skills:</h3>
+      <ul>
+        <li>Romanian (native); English (fluent, written and spoken); French (intermediate)</li>
+        <li>Good distributive attention and improvising skills from playing guitar (5 years) and other instruments throughout the years.</li>
+        <li>Self-learning skills and patience from teaching guitar to children for a year.</li>
+      </ul>
+    </div>
+    <button type = "button" onclick = "location.href = 'main_page.html'"><span>Main Page</span></button>
+  </body>
+</html>
