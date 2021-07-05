@@ -5,7 +5,7 @@ Web Design and Development Coursework using HTML, CSS and Javascript
 
 Python programs
 
-Java programs usign NetBeans
+Java programs using NetBeans
 
 MySql database and ERDs
 
